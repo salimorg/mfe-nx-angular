@@ -1,10 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedComponent } from '@mfe-angular/shared';
 
 @Component({
   selector: 'mfe-angular-nx-welcome',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SharedComponent],
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -426,6 +427,7 @@ import { CommonModule } from '@angular/common';
         }
       }
     </style>
+    <mfe-angular-shared/>
     <div class="wrapper">
       <div class="container">
         <!--  WELCOME  -->
