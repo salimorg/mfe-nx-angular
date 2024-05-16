@@ -29,11 +29,7 @@
       "inputs": ["production", "^production"]
     },
     "@nx/angular:webpack-browser": {
-      "inputs": [
-        {
-          "env": "NX_MF_DEV_SERVER_STATIC_REMOTES"
-        }
-      ]
+      "inputs": [{ "env": "NX_MF_DEV_SERVER_STATIC_REMOTES" }]
     },
     "@nx/angular:ng-packagr-lite": {
       "cache": true,
@@ -42,18 +38,8 @@
     }
   },
   "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" } },
     {
       "plugin": "@nx/cypress/plugin",
       "options": {
@@ -69,12 +55,8 @@
       "style": "css",
       "unitTestRunner": "jest"
     },
-    "@nx/angular:library": {
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nx/angular:component": {
-      "style": "css"
-    }
-  }
+    "@nx/angular:library": { "linter": "eslint", "unitTestRunner": "jest" },
+    "@nx/angular:component": { "style": "css" }
+  },
+  "nxCloudAccessToken": "Y2UxMjZkN2UtOGQwYS00YjM0LTgxMjgtM2NmMTFhYzY1ZGZmfHJlYWQtd3JpdGU="
 }
